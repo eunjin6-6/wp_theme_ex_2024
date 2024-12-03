@@ -1,5 +1,5 @@
 <?php get_header() ?>
-  <?php wp_login_form() ?>
+
   <div id="content" class="two-thirds">
    
   <h2>Lastest Works</h2>
