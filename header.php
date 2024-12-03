@@ -52,10 +52,20 @@
 		<?php
 			//get_search_form()
 		?>
-		<form action="http://localhost/wordpress/">
+		<form action="<?php echo home_url() ?>">
 			<input type="search" name="s">
 			<button>검색</button>
 		</form>
+
+		<?php if ( is_user_logged_in() ) : ?>
+			<a href="<?php wp_logout_url(); ?>">로그아웃</a>
+			<?php else : ?>
+				<!-- <a href="http://localhost/wordpress/login/">로그인</a> -->
+				<a href="<?php bloginfo('url') ?>/login/">로그인</a>
+				<a href="<?php bloginfo('url') ?>/wp-login.php?action=register">회원가입</a>
+		<?php endif; ?>
+
+
 	</nav><!-- .main -->
 
 	<div class="main">
