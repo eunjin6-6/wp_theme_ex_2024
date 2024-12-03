@@ -15,7 +15,6 @@
           while ( have_posts() ) : the_post();
         ?>
         <li>
-
           <a href="<?php the_permalink(); ?>">
             <?php
               if ( has_post_thumbnail() ) {

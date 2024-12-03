@@ -498,8 +498,8 @@ img {
 }
 #content img {
 	margin: 0;
-	height: auto;
-	width: auto;
+	/* height: auto;
+	width: auto; */
 }
 #content .alignleft,
 #content img.alignleft {

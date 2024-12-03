@@ -49,6 +49,9 @@
 			'theme_location' => 'main_menu' //functions.php 의 변수명과 동일하게 설정
 		) );
 		?>
+		<?php
+			get_search_form()
+		?>
 	</nav><!-- .main -->
 
 	<div class="main">
